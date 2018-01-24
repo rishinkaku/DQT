@@ -7,6 +7,10 @@ class LinkedCo(models.Model):
     """
     id = models.AutoField('ID', primary_key=True)
     text = models.CharField('挂靠单位名称', max_length=100)
+    memo = models.TextField('备注', blank=True)
+    is_del = models.BooleanField('是否删除', default=False)
+    create_time = models.DateTimeField('信息创建时间', auto_now_add=True)
+    update_time = models.DateTimeField('信息更新时间', auto_now=True)
 
 
 class District(models.Model):
@@ -15,6 +19,10 @@ class District(models.Model):
     """
     id = models.AutoField('ID', primary_key=True)
     text = models.CharField('区域名称', max_length=100)
+    memo = models.TextField('备注', blank=True)
+    is_del = models.BooleanField('是否删除', default=False)
+    create_time = models.DateTimeField('信息创建时间', auto_now_add=True)
+    update_time = models.DateTimeField('信息更新时间', auto_now=True)
 
 
 class ProjectType(models.Model):
@@ -23,6 +31,10 @@ class ProjectType(models.Model):
     """
     id = models.AutoField('ID', primary_key=True)
     text = models.CharField('项目类型', max_length=50)
+    memo = models.TextField('备注', blank=True)
+    is_del = models.BooleanField('是否删除', default=False)
+    create_time = models.DateTimeField('信息创建时间', auto_now_add=True)
+    update_time = models.DateTimeField('信息更新时间', auto_now=True)
 
 
 class BaseInfo(models.Model):
@@ -42,3 +54,11 @@ class BaseInfo(models.Model):
     is_del = models.BooleanField('是否删除', default=False)
     create_time = models.DateTimeField('信息创建时间', auto_now_add=True)
     update_time = models.DateTimeField('信息更新时间', auto_now=True)
+
+    @staticmethod
+    def query_fields():
+        """
+        :return: list 查询的字段名称
+        """
+        return ['id', 'internal_no', 'pro_no', 'task_code', 'pro_name', 'predict', 'memo', 'linked_co__text',
+                'district__text', 'pro_type__text']

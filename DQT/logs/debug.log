@@ -1,0 +1,1168 @@
+2018-01-18 08:13:15,072 [Thread-10:123145429700608] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 08:13:15,079 [Thread-11:123145429700608] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 08:13:15,269 [Thread-19:123145429700608] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 08:13:15,462 [Thread-20:123145429700608] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 08:13:15,467 [Thread-21:123145434955776] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 08:13:15,481 [Thread-22:123145429700608] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 08:13:15,593 [Thread-24:123145429700608] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 08:13:15,736 [Thread-25:123145429700608] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-18 10:10:11,202 [Thread-22:123145358839808] [django.request:93] [base:get_response] [WARNING]- Not Found: /base/get_by_id/undefined
+2018-01-18 11:05:45,870 [Thread-2:123145346924544] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/get_top_10_pro
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 183, in recent_top_ten_pro
+    query = list(BaseInfo.objects.all()[:10].order_by('update_time', 'create_time').values('id', 'pro_name'))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 1012, in order_by
+    "Cannot reorder a query once a slice has been taken."
+AssertionError: Cannot reorder a query once a slice has been taken.
+2018-01-18 13:06:58,049 [Thread-8:123145343180800] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/material
+2018-01-18 14:57:29,848 [Thread-47:123145522839552] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/get_top_10_pro/xiu'h
+2018-01-18 14:57:30,079 [Thread-48:123145522839552] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/get_top_10_pro/xiu'ha
+2018-01-18 14:57:33,133 [Thread-49:123145522839552] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/get_top_10_pro/xiu'h
+2018-01-18 14:57:33,516 [Thread-50:123145522839552] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/get_top_10_pro/xiu'hua
+2018-01-18 14:57:34,220 [Thread-51:123145522839552] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/get_top_10_pro/绣花
+2018-01-18 14:58:22,545 [Thread-62:123145538605056] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/search_pro/
+2018-01-18 15:00:05,847 [Thread-14:123145456947200] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/search_pro/x
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 203, in search_pro
+    '-create_time').values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 1012, in order_by
+    "Cannot reorder a query once a slice has been taken."
+AssertionError: Cannot reorder a query once a slice has been taken.
+2018-01-18 15:00:06,054 [Thread-15:123145456947200] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/search_pro/xu
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 203, in search_pro
+    '-create_time').values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 1012, in order_by
+    "Cannot reorder a query once a slice has been taken."
+AssertionError: Cannot reorder a query once a slice has been taken.
+2018-01-18 15:00:06,625 [Thread-16:123145456947200] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/search_pro/x
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 203, in search_pro
+    '-create_time').values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 1012, in order_by
+    "Cannot reorder a query once a slice has been taken."
+AssertionError: Cannot reorder a query once a slice has been taken.
+2018-01-18 15:00:07,389 [Thread-17:123145456947200] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/search_pro/xiu'hua
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 203, in search_pro
+    '-create_time').values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 1012, in order_by
+    "Cannot reorder a query once a slice has been taken."
+AssertionError: Cannot reorder a query once a slice has been taken.
+2018-01-18 15:00:07,624 [Thread-18:123145456947200] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/search_pro/绣花
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 203, in search_pro
+    '-create_time').values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 1012, in order_by
+    "Cannot reorder a query once a slice has been taken."
+AssertionError: Cannot reorder a query once a slice has been taken.
+2018-01-18 15:00:58,604 [Thread-22:123145538965504] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/search_pro/xiu
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 205, in search_pro
+    return JsonResponse({'result': query}, safe=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/http/response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet []> is not JSON serializable
+2018-01-18 15:01:00,775 [Thread-23:123145538965504] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/search_pro/绣花
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 205, in search_pro
+    return JsonResponse({'result': query}, safe=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/http/response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <QuerySet [{'id': 613, 'pro_name': '秦淮区绣花巷FTTB光纤改造工程'}]> is not JSON serializable
+2018-01-18 15:48:59,242 [Thread-31:123145511518208] [django.request:93] [base:get_response] [WARNING]- Not Found: /material/fake_delete
+2018-01-18 15:53:55,446 [Thread-27:123145515249664] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/fake_delete
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 113, in fake_delete
+    rows = Material.objects.filter(id__in=ids).update(is_del=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1152, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1015, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1378, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'id' into field. Choices are: create_time, expected_scale, good_arrived_scale, is_del, lis_scale, material_situation, memo, project, project_id, update_time
+2018-01-18 16:56:28,765 [Thread-10:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 16:56:28,773 [Thread-11:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 16:56:28,865 [Thread-12:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:29,183 [Thread-20:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:29,185 [Thread-21:123145504583680] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:29,187 [Thread-22:123145509838848] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:29,273 [Thread-24:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:29,351 [Thread-25:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-18 16:56:39,675 [Thread-27:123145504583680] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 16:56:39,676 [Thread-28:123145509838848] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 16:56:39,756 [Thread-29:123145515094016] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:39,832 [Thread-30:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:39,842 [Thread-31:123145520349184] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:39,845 [Thread-32:123145504583680] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 16:56:39,953 [Thread-33:123145499328512] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:01:53,486 [Thread-11:123145421856768] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 17:01:53,505 [Thread-12:123145427111936] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 17:01:53,508 [Thread-13:123145432367104] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:01:53,630 [Thread-21:123145421856768] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:01:53,638 [Thread-22:123145421856768] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:01:53,645 [Thread-23:123145427111936] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:01:53,751 [Thread-25:123145421856768] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:02:00,989 [Thread-51:123145421856768] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /material/get_by_id/1
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Materials/views.py", line 60, in query_by_id
+    query.project = query.project.pro_name
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/related_descriptors.py", line 197, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "'腾达雅苑小区FTTB光纤改造光缆工程'": "Material.project" must be a "BaseInfo" instance.
+2018-01-18 17:03:10,998 [Thread-53:123145427111936] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 17:03:11,005 [Thread-54:123145432367104] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 17:03:11,034 [Thread-55:123145437622272] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:03:11,064 [Thread-56:123145442877440] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:03:11,066 [Thread-57:123145448132608] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:03:11,067 [Thread-58:123145421856768] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:03:11,154 [Thread-59:123145421856768] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:03:13,779 [Thread-3:123145449263104] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 17:03:13,785 [Thread-4:123145454518272] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 17:03:13,807 [Thread-5:123145459773440] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:03:13,829 [Thread-6:123145465028608] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 17:03:13,878 [Thread-7:123145470283776] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 18:24:36,034 [Thread-10:123145420546048] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 18:24:36,054 [Thread-11:123145420546048] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 18:24:36,339 [Thread-20:123145420546048] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 18:24:36,351 [Thread-21:123145420546048] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 18:24:36,463 [Thread-22:123145420546048] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 18:24:36,543 [Thread-23:123145420546048] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-18 21:30:33,574 [Thread-21:123145446006784] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/DQT/views.py", line 7, in view_base
+    return render(request, 'main.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'coordination_list' not found. 'coordination_list' is not a valid view function or pattern name.
+2018-01-18 21:30:35,189 [Thread-22:123145451261952] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/DQT/views.py", line 7, in view_base
+    return render(request, 'main.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'coordination_list' not found. 'coordination_list' is not a valid view function or pattern name.
+2018-01-18 21:31:03,111 [Thread-2:123145441161216] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/DQT/views.py", line 7, in view_base
+    return render(request, 'main.html')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'coordination_list' not found. 'coordination_list' is not a valid view function or pattern name.
+2018-01-18 21:32:38,045 [Thread-10:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 21:32:38,052 [Thread-11:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 21:32:38,107 [Thread-12:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:32:38,171 [Thread-13:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:32:38,187 [Thread-14:123145509138432] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:32:38,194 [Thread-15:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:32:38,305 [Thread-24:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:13,052 [Thread-46:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 21:34:13,059 [Thread-47:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 21:34:13,111 [Thread-48:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:13,279 [Thread-56:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:13,282 [Thread-57:123145509138432] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:13,285 [Thread-58:123145514393600] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:13,392 [Thread-60:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:23,346 [Thread-78:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 21:34:23,355 [Thread-79:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 21:34:23,434 [Thread-80:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:23,500 [Thread-81:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:23,510 [Thread-82:123145509138432] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:23,511 [Thread-83:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:34:23,615 [Thread-84:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:35:19,322 [Thread-97:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 21:35:19,329 [Thread-98:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 21:35:19,389 [Thread-99:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:35:19,661 [Thread-107:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:35:19,662 [Thread-108:123145509138432] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:35:19,664 [Thread-109:123145514393600] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:35:19,791 [Thread-111:123145503883264] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:45:07,263 [Thread-10:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 21:45:07,271 [Thread-11:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 21:45:07,334 [Thread-12:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:45:07,607 [Thread-20:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:45:07,616 [Thread-21:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:45:07,620 [Thread-22:123145414807552] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:45:07,762 [Thread-24:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:47:37,464 [Thread-49:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 21:47:37,473 [Thread-50:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 21:47:37,537 [Thread-51:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:47:37,798 [Thread-59:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:47:37,806 [Thread-60:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:47:37,808 [Thread-61:123145414807552] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:47:37,939 [Thread-63:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:48:28,507 [Thread-92:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 21:48:28,514 [Thread-93:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 21:48:28,575 [Thread-94:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:48:28,850 [Thread-102:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:48:28,859 [Thread-103:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:48:28,860 [Thread-104:123145414807552] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 21:48:29,021 [Thread-106:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:05:08,998 [Thread-133:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:05:09,007 [Thread-134:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:05:09,065 [Thread-135:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:05:09,330 [Thread-143:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:05:09,339 [Thread-144:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:05:09,342 [Thread-145:123145414807552] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:05:09,477 [Thread-147:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:55,388 [Thread-167:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:06:55,397 [Thread-168:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:06:55,474 [Thread-169:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:55,542 [Thread-170:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:55,552 [Thread-171:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:55,553 [Thread-172:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:55,726 [Thread-173:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:56,378 [Thread-182:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:06:56,384 [Thread-183:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:06:56,464 [Thread-184:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:56,709 [Thread-192:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:56,714 [Thread-193:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:56,715 [Thread-194:123145414807552] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:06:56,856 [Thread-196:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:09:07,295 [Thread-223:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:09:07,302 [Thread-224:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:09:07,361 [Thread-225:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:09:07,681 [Thread-234:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:09:07,808 [Thread-235:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:16:49,553 [Thread-271:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:16:49,560 [Thread-272:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:16:49,627 [Thread-273:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:16:49,896 [Thread-281:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:16:49,907 [Thread-282:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:16:49,910 [Thread-283:123145414807552] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:16:49,941 [Thread-285:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:17:50,511 [Thread-305:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:17:50,518 [Thread-306:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:17:50,595 [Thread-307:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:17:50,664 [Thread-308:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:17:50,675 [Thread-309:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:17:50,676 [Thread-310:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:17:50,819 [Thread-311:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:18:04,341 [Thread-317:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/add
+2018-01-18 22:18:14,992 [Thread-320:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:18:15,002 [Thread-321:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:18:15,078 [Thread-322:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:18:15,150 [Thread-323:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:18:15,157 [Thread-324:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:18:15,158 [Thread-325:123145414807552] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:18:15,295 [Thread-326:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:26:33,932 [Thread-332:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:26:33,933 [Thread-333:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:26:34,017 [Thread-334:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:26:34,082 [Thread-335:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:26:34,093 [Thread-336:123145409552384] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:26:34,094 [Thread-337:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:26:34,229 [Thread-338:123145404297216] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:38:58,926 [Thread-10:123145501929472] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 22:38:58,933 [Thread-11:123145501929472] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 22:38:58,992 [Thread-12:123145501929472] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:38:59,262 [Thread-20:123145501929472] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:38:59,270 [Thread-21:123145507184640] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:38:59,271 [Thread-22:123145512439808] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 22:38:59,408 [Thread-24:123145501929472] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:51:41,521 [Thread-11:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 23:51:41,529 [Thread-12:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 23:51:41,579 [Thread-13:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:51:41,736 [Thread-21:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:51:41,750 [Thread-22:123145577779200] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:51:41,750 [Thread-23:123145583034368] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:51:41,852 [Thread-25:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:51:43,581 [Thread-41:123145572524032] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /coordination/list
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1682, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1447, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1378, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Coordination/views.py", line 35, in coordination
+    'design_material', 'material_usage')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1934, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1705, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+2018-01-18 23:52:10,847 [Thread-46:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 23:52:10,848 [Thread-47:123145577779200] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 23:52:10,939 [Thread-48:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:52:11,021 [Thread-49:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:52:11,027 [Thread-50:123145577779200] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:52:11,029 [Thread-51:123145583034368] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:52:11,153 [Thread-52:123145572524032] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:52:12,999 [Thread-55:123145572524032] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /coordination/list
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1682, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1447, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1378, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Coordination/views.py", line 35, in coordination
+    'design_material', 'material_usage')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1934, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1705, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+2018-01-18 23:53:42,181 [Thread-10:123145358090240] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 23:53:42,189 [Thread-11:123145358090240] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 23:53:42,248 [Thread-12:123145358090240] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:53:42,543 [Thread-20:123145358090240] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:53:42,552 [Thread-21:123145363345408] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:53:42,553 [Thread-22:123145368600576] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:53:42,703 [Thread-24:123145358090240] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:53:44,200 [Thread-40:123145358090240] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /coordination/list
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1682, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1447, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1378, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper_path' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Coordination/views.py", line 35, in coordination
+    'design_material_path', 'material_usage_path')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1934, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1705, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper_path' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+2018-01-18 23:54:09,050 [Thread-44:123145358090240] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /coordination/list
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1682, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1447, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1378, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper_path' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Coordination/views.py", line 35, in coordination
+    'design_material_path', 'material_usage_path')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1934, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1705, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper_path' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+2018-01-18 23:55:48,075 [Thread-47:123145358090240] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /coordination/list
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1682, in add_fields
+    join_info = self.setup_joins(name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1447, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1378, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper_path' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/Coordination/views.py", line 35, in coordination
+    'design_material_path', 'material_usage_path')
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 742, in values
+    clone = self._values(*fields, **expressions)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 737, in _values
+    clone.query.set_values(fields)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1934, in set_values
+    self.add_fields(field_names, True)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1705, in add_fields
+    "Choices are: %s" % (name, ", ".join(names)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'construction_paper_path' into field. Choices are: construction_paper_paths, coordination_id, create_time, design_material_paths, design_paper_paths, is_del, material_usage_paths, memo, project, project_id, situation, update_time
+2018-01-18 23:56:24,075 [Thread-10:123145451761664] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-18 23:56:24,082 [Thread-11:123145451761664] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-18 23:56:24,140 [Thread-12:123145451761664] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:56:24,416 [Thread-20:123145451761664] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:56:24,422 [Thread-21:123145457016832] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:56:24,423 [Thread-22:123145462272000] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-18 23:56:24,558 [Thread-24:123145451761664] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:01:38,451 [Thread-10:123145578921984] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-19 00:01:38,459 [Thread-11:123145578921984] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-19 00:01:38,519 [Thread-12:123145578921984] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:01:38,830 [Thread-20:123145578921984] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:01:38,839 [Thread-21:123145584177152] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:01:38,841 [Thread-22:123145589432320] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:01:38,993 [Thread-24:123145578921984] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:02:02,763 [Thread-43:123145578921984] [django.request:93] [views:add] [ERROR]- Cannot assign "'614'": "Coordination.project" must be a "BaseInfo" instance.
+2018-01-19 00:03:53,858 [Thread-7:123145499885568] [django.request:93] [views:add] [ERROR]- 'design_paper' is an invalid keyword argument for this function
+2018-01-19 00:04:49,725 [Thread-10:123145400668160] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-19 00:04:49,733 [Thread-11:123145400668160] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-19 00:04:49,791 [Thread-12:123145400668160] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:04:50,145 [Thread-20:123145400668160] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:04:50,157 [Thread-21:123145405923328] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:04:50,159 [Thread-22:123145411178496] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:04:50,318 [Thread-24:123145400668160] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:13:20,874 [Thread-15:123145377841152] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-19 00:13:20,889 [Thread-16:123145377841152] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-19 00:13:20,941 [Thread-17:123145377841152] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:13:21,199 [Thread-25:123145377841152] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:13:21,205 [Thread-26:123145383096320] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:13:21,211 [Thread-27:123145388351488] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:13:21,443 [Thread-29:123145377841152] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:17:07,773 [Thread-2:123145453387776] [django.request:94] [views:add] [ERROR]- 'list' object has no attribute '_committed'
+2018-01-19 00:17:55,643 [Thread-2:123145316290560] [django.request:94] [views:add] [ERROR]- (1406, "Data too long for column 'design_material_paths' at row 1")
+2018-01-19 00:21:37,922 [Thread-11:123145505640448] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-19 00:21:37,930 [Thread-12:123145505640448] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-19 00:21:37,998 [Thread-13:123145505640448] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:21:38,281 [Thread-21:123145505640448] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:21:38,283 [Thread-22:123145510895616] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:21:38,284 [Thread-23:123145516150784] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-19 00:21:38,414 [Thread-25:123145505640448] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:30:47,830 [Thread-3:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:30:47,838 [Thread-4:123145447247872] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:30:48,042 [Thread-5:123145452503040] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:30:48,223 [Thread-6:123145457758208] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:30:48,238 [Thread-7:123145463013376] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:30:48,362 [Thread-8:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:30:48,488 [Thread-9:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-22 08:31:47,919 [Thread-32:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:31:47,920 [Thread-31:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:31:48,007 [Thread-33:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:31:48,083 [Thread-34:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:31:48,091 [Thread-35:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:31:48,094 [Thread-36:123145447247872] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:31:48,214 [Thread-37:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:33:55,795 [Thread-39:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:33:55,803 [Thread-40:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:33:55,884 [Thread-41:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:33:55,945 [Thread-42:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:33:55,956 [Thread-43:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:33:55,957 [Thread-44:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:33:56,107 [Thread-45:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /workbench.html
+2018-01-22 08:34:35,151 [Thread-47:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:34:35,162 [Thread-48:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:34:37,994 [Thread-57:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:34:38,002 [Thread-58:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:36:19,038 [Thread-125:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:36:19,047 [Thread-126:123145447247872] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:36:21,203 [Thread-135:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:36:21,205 [Thread-136:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:37:25,698 [Thread-166:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:37:25,707 [Thread-167:123145447247872] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:37:27,313 [Thread-176:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:37:27,315 [Thread-177:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:37:28,884 [Thread-195:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:37:28,887 [Thread-196:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:37:45,117 [Thread-207:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:37:45,124 [Thread-208:123145447247872] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:37:46,095 [Thread-217:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:37:46,096 [Thread-218:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:42:45,873 [Thread-248:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/main_logo.png
+2018-01-22 08:42:45,881 [Thread-249:123145447247872] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:48:08,085 [Thread-260:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:49:59,992 [Thread-278:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:51:43,198 [Thread-299:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:54:04,283 [Thread-306:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:54:09,442 [Thread-315:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:57:13,803 [Thread-326:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 08:58:05,011 [Thread-332:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:02:29,231 [Thread-338:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:03:39,356 [Thread-404:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:06:05,080 [Thread-410:123145441992704] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:33:44,682 [Thread-423:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:33:51,953 [Thread-464:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:49:34,594 [Thread-531:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:54:59,879 [Thread-604:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 09:55:16,679 [Thread-644:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 10:06:15,645 [Thread-684:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 10:07:14,095 [Thread-728:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 10:08:28,847 [Thread-768:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 10:09:02,764 [Thread-812:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 10:09:25,413 [Thread-849:123145436737536] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:00:09,374 [Thread-10:123145554190336] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:00:10,038 [Thread-19:123145554190336] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-22 15:02:39,689 [Thread-96:123145554190336] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:03:44,293 [Thread-190:123145554190336] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:03:48,896 [Thread-233:123145554190336] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:06:31,646 [Thread-296:123145554190336] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:09:54,495 [Thread-340:123145554190336] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:18:15,569 [Thread-10:123145449472000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:21:39,007 [Thread-10:123145417826304] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:22:04,116 [Thread-54:123145417826304] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/get_by_id/undefined
+2018-01-22 15:22:08,178 [Thread-55:123145417826304] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/get_by_id/undefined
+2018-01-22 15:22:12,351 [Thread-56:123145417826304] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/get_by_id/undefined
+2018-01-22 15:48:58,146 [Thread-3:123145504256000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:51:18,702 [Thread-21:123145499000832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:55:07,656 [Thread-62:123145499000832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:59:36,006 [Thread-97:123145504256000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 15:59:38,240 [Thread-106:123145499000832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 16:27:54,397 [Thread-147:123145499000832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 16:58:58,785 [Thread-15:123145539960832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 16:59:01,607 [Thread-43:123145539960832] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 32, in base_info
+    page, page_size = extract_params(request)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 242, in extract_params
+    page, page_size, conditions = None
+TypeError: 'NoneType' object is not iterable
+2018-01-22 17:00:32,317 [Thread-15:123145532690432] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 17:06:01,181 [Thread-81:123145537945600] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 17:06:49,610 [Thread-24:123145404796928] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 41, in base_info
+    return pagination_handle(request, query)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 271, in pagination_handle
+    page, page_size = extract_params(request)
+ValueError: too many values to unpack (expected 2)
+2018-01-22 17:09:23,974 [Thread-15:123145590530048] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 17:09:31,681 [Thread-43:123145590530048] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 38, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(Q(**conditions))[start:end].values('id', 'linked_co__text', 'district__text',
+TypeError: type object argument after ** must be a mapping, not list
+2018-01-22 17:13:42,107 [Thread-15:123145329504256] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 17:13:43,966 [Thread-44:123145334759424] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 38, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter([q for q in conditions])[start:end].values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1149, in build_filter
+    arg, value = filter_expr
+ValueError: not enough values to unpack (expected 2, got 0)
+2018-01-22 17:14:26,092 [Thread-49:123145334759424] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 17:14:35,768 [Thread-57:123145329504256] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 38, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter([q for q in conditions])[start:end].values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1149, in build_filter
+    arg, value = filter_expr
+ValueError: not enough values to unpack (expected 2, got 0)
+2018-01-22 23:22:38,200 [Thread-15:123145475203072] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 23:22:38,661 [Thread-24:123145475203072] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-22 23:22:40,236 [Thread-44:123145475203072] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-22 23:22:44,372 [Thread-49:123145475203072] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-22 23:23:16,402 [Thread-53:123145475203072] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1270, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1214, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1084, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '东区'
+2018-01-22 23:25:16,634 [Thread-8:123145506832384] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 23:25:17,908 [Thread-10:123145517342720] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-22 23:25:23,297 [Thread-13:123145501577216] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-22 23:25:38,365 [Thread-20:123145501577216] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1270, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1214, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1084, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/lookups.py", line 18, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py", line 947, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '东区'
+2018-01-22 23:28:23,044 [Thread-8:123145495289856] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-22 23:35:13,868 [Thread-8:123145429872640] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-22 23:35:23,984 [Thread-16:123145429872640] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1270, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1214, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1075, in build_lookup
+    raise FieldError('Related Field got invalid lookup: {}'.format(lookups[-1]))
+django.core.exceptions.FieldError: Related Field got invalid lookup: contains
+2018-01-23 08:58:56,071 [Thread-8:123145450262528] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 08:58:56,634 [Thread-10:123145460772864] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-23 08:59:27,060 [Thread-14:123145445007360] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 08:59:46,128 [Thread-62:123145445007360] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 836, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py", line 854, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1252, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1270, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    split_subq=split_subq,
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1214, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1075, in build_lookup
+    raise FieldError('Related Field got invalid lookup: {}'.format(lookups[-1]))
+django.core.exceptions.FieldError: Related Field got invalid lookup: contains
+2018-01-23 09:15:26,306 [Thread-15:123145358778368] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:15:32,304 [Thread-43:123145353523200] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:16:45,974 [Thread-50:123145348268032] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:16:58,431 [Thread-51:123145348268032] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:16:59,110 [Thread-52:123145348268032] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:16:59,668 [Thread-53:123145348268032] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:20:28,895 [Thread-37:123145529856000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:20:30,233 [Thread-54:123145529856000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:20:31,518 [Thread-83:123145529856000] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:21:02,162 [Thread-7:123145549926400] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:22:22,264 [Thread-7:123145573384192] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 49, in base_info
+    return pagination_handle(request, query)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 278, in pagination_handle
+    page, page_size = extract_params(request)
+ValueError: too many values to unpack (expected 2)
+2018-01-23 09:23:26,411 [Thread-7:123145392877568] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 49, in base_info
+    return pagination_handle(request, query)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 278, in pagination_handle
+    page, page_size = extract_params(request)
+ValueError: too many values to unpack (expected 2)
+2018-01-23 09:26:17,403 [Thread-9:123145456332800] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:26:22,243 [Thread-13:123145456332800] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:30:57,750 [Thread-15:123145466535936] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:31:06,080 [Thread-44:123145471791104] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:32:37,588 [Thread-55:123145466535936] [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /base/all
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tao/projects/python/DQT/BaseInfo/views.py", line 40, in base_info
+    query = BaseInfo.objects.filter(is_del=False).filter(reduce(operator.or_, conditions))[start:end].values('id',
+TypeError: reduce() of empty sequence with no initial value
+2018-01-23 09:37:00,384 [Thread-15:123145519529984] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:39:55,402 [Thread-26:123145535057920] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:42:27,341 [Thread-15:123145446264832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 09:59:58,068 [Thread-62:123145446264832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:00:01,689 [Thread-80:123145446264832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:00:50,135 [Thread-122:123145446264832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:01:29,694 [Thread-157:123145446264832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:02:44,957 [Thread-168:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:06:27,827 [Thread-183:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:06:46,190 [Thread-193:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:07:01,754 [Thread-209:123145446264832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:07:18,636 [Thread-249:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:07:26,949 [Thread-258:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:07:56,242 [Thread-267:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:08:33,120 [Thread-277:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:09:18,416 [Thread-291:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:09:19,539 [Thread-300:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:09:27,515 [Thread-334:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:14:26,384 [Thread-347:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:14:41,512 [Thread-356:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:19:05,076 [Thread-375:123145446264832] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:19:40,839 [Thread-407:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:19:53,747 [Thread-416:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:20:04,854 [Thread-425:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 10:20:21,831 [Thread-435:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:04:36,907 [Thread-444:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:05:08,384 [Thread-458:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:05:23,465 [Thread-466:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:16:15,297 [Thread-479:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:17:24,777 [Thread-488:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:17:36,376 [Thread-497:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:18:19,927 [Thread-506:123145451520000] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:25:41,012 [Thread-8:123145575342080] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 12:47:09,811 [Thread-32:123145570086912] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 14:08:07,301 [Thread-74:123145570086912] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 14:08:34,620 [Thread-116:123145570086912] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 14:14:11,973 [Thread-15:123145406619648] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-23 19:30:27,128 [Thread-24:123145445371904] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/1
+2018-01-24 14:35:21,206 [Thread-6:123145378500608] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png
+2018-01-24 14:35:21,731 [Thread-19:123145357479936] [django.request:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2018-01-24 14:35:30,787 [Thread-56:123145367990272] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/1
+2018-01-24 14:35:31,447 [Thread-60:123145367990272] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/1
+2018-01-24 14:35:36,956 [Thread-70:123145367990272] [django.request:93] [base:get_response] [WARNING]- Not Found: /coordination/1
+2018-01-24 14:36:09,827 [Thread-88:123145362735104] [django.request:93] [base:get_response] [WARNING]- Not Found: /images/main/user.png

@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 from unipath import Path
+import logging
+import django.utils.log
+import logging.handlers
+from os.path import join
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -28,7 +32,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'BaseInfo.apps.BaseinfoConfig',
+    'Materials',
+    'Coordination'
 ]
 
 MIDDLEWARE = [
@@ -72,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'DQT.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -86,7 +90,6 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -106,7 +109,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -119,7 +121,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = False
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
@@ -137,3 +138,84 @@ STATICFILES_DIRS = (
     #  注意一定要在后面加逗号，表明是tuple
     PROJECT_DIR.child('static'),
 )
+
+# Logging配置
+# 管理员邮箱
+ADMINS = (
+    ('Franklin Tao', 'taojunxin@qq.com'),
+)
+
+# 非空链接，却发生404错误，发送通知MANAGERS
+SEND_BROKEN_LINK_EMAILS = True
+MANAGERS = ADMINS
+
+# Email设置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.163.com'  # QQ邮箱SMTP服务器(邮箱需要开通SMTP服务)
+EMAIL_PORT = 25  # QQ邮箱SMTP服务端口
+EMAIL_HOST_USER = 'taojunxin@163.com'  # 我的邮箱帐号
+EMAIL_HOST_PASSWORD = 'tjx1992'  # 授权码
+EMAIL_SUBJECT_PREFIX = '[Django]'  # 为邮件标题的前缀,默认是'[django]'
+EMAIL_USE_TLS = True  # 开启安全链接
+DEFAULT_FROM_EMAIL = SERVER_EMAIL = EMAIL_HOST_USER  # 设置发件人
+
+# logging日志配置
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {  # 日志格式
+        'standard': {
+            'format': '%(asctime)s [%(threadName)s:%(thread)d] [%(name)s:%(lineno)d] [%(module)s:%(funcName)s] [%(levelname)s]- %(message)s'},
+        'simple': {
+            'format': '[%(asctime)s] %(levelname)s %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+    },
+    'filters': {  # 过滤器
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        }
+    },
+    'handlers': {  # 处理器
+        'null': {
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
+        },
+        'mail_admins': {  # 发送邮件通知管理员
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'filters': ['require_debug_false'],  # 仅当 DEBUG = False 时才发送邮件
+            'include_html': True,
+        },
+        'debug': {  # 记录到日志文件(需要创建对应的目录，否则会出错)
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(PROJECT_DIR, "logs", 'debug.log'),  # 日志输出文件
+            'maxBytes': 1024 * 1024 * 5,  # 文件大小
+            'backupCount': 5,  # 备份份数
+            'formatter': 'standard',  # 使用哪种formatters日志格式
+        },
+        'console': {  # 输出到控制台
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+    },
+    'loggers': {  # logging管理器
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False
+        },
+        'django.request': {
+            'handlers': ['debug', 'mail_admins'],
+            'level': 'WARNING',
+            'propagate': True,
+        },
+        # 对于不在 ALLOWED_HOSTS 中的请求不发送报错邮件
+        'django.security.DisallowedHost': {
+            'handlers': ['null'],
+            'propagate': False,
+        },
+    }
+}

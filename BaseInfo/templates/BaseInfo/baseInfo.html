@@ -10,180 +10,60 @@
     <link rel="stylesheet" href="{% static '/custom/uimaker/easyui.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static '/custom/uimaker/icon.css' %}">
     <link rel="stylesheet" href="{% static '/pages/css/providers1.css' %}">
-    <style>
-    </style>
+    <script type="text/javascript" src="{% static '/custom/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/custom/jquery.easyui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/custom/easyui-lang-zh_CN.js' %}"></script>
+    <script src="{% static '/js/baseInfo.js' %}"></script>
 </head>
 <body>
 <div class="container">
-    <table id="dg" style="width:100%;height:529px">
-        {#              data-options="#}
-        {#                rownumbers:true,#}
-        {#                singleSelect:false,#}
-        {#                autoRowHeight:false,#}
-        {#                pagination:true,#}
-        {#                fitColumns:true,#}
-        {#                striped:true,#}
-        {#                checkOnSelect:false,#}
-        {#                selectOnCheck:false,#}
-        {#                collapsible:true,#}
-        {#                toolbar:'#tb',#}
-        {#                pageSize:10">#}
-        {#            <thead>#}
-        {#                <tr>#}
-        {#                    <th field="code" width="110">供应商编码</th>#}
-        {#                    <th field="name" width="226">供应商名称</th>#}
-        {#                    <th field="level" width="112">等级</th>#}
-        {#                    <th field="provide" width="170">主供品类</th>#}
-        {#                    <th field="full" width="130">资料是否完善</th>#}
-        {#                    <th field="issubmit" width="136">调查表格是否提交</th>#}
-        {#                    <th field="status" width="120">审核状态</th>#}
-        {#                    <th field="note" width="105">备注</th>#}
-        {#                </tr>#}
-        {#            </thead>#}
+    <table id="dg" style="width:100%;height:535px">
     </table>
+
+    <!-- 顶部条件查询开始 -->
     <div id="tb" style="padding:0 30px;">
-        {#        <div class="conditions">#}
-        {#            <span class="con-span">供应商编码: </span><input class="easyui-textbox" type="text" name="code" style="width:166px;height:35px;line-height:35px;"></input>#}
-        {#            <span class="con-span">供应商名称: </span><input class="easyui-textbox" type="text" name="name" style="width:166px;height:35px;line-height:35px;"></input>#}
-        {#            <a href="#" class="easyui-linkbutton" iconCls="icon-search" data-options="selected:true">查询</a>#}
-        {#            <a href="#" class="easyui-linkbutton" iconCls="icon-reload">重置</a>#}
-        {#            <a href="#" class="easyui-linkbutton more" iconCls="icon-more">更多</a>#}
-        {#        </div>#}
-        {#        <div class="conditions hide">#}
-        {#            <span class="con-span">合同名称: </span><input class="easyui-textbox" type="text" name="code" style="width:166px;height:35px;line-height:35px;"></input>#}
-        {#            <span class="con-span">合同模板: </span><select class="easyui-combobox" name="language" style="height:35px;width:166px;"><option>合同模板1</option></select>#}
-        {#            <span class="con-span">供应商编码: </span><input class="easyui-textbox" type="text" name="code" style="width:166px;height:35px;line-height:35px;"></input>#}
-        {#            <span class="con-span">供应商: </span><input class="easyui-textbox" type="text" name="code" style="width:166px;height:35px;line-height:35px;"></input>#}
-        {#        </div>#}
-        {#        <div class="conditions hide">#}
-        {#            <span class="con-span">公司代码: </span><input class="easyui-textbox" type="text" name="code" style="width:166px;height:35px;line-height:35px;"></input>#}
-        {#            <span class="con-span">公司名称: </span><select class="easyui-combobox" name="language" style="height:35px;width:166px;"><option>公司名称</option></select>#}
-        {#            <span class="con-span">发布时间: </span><input class="easyui-datetimebox" style="width:166px;height:35px;line-height:35px;">#}
-        {#            <span class="con-span">合同状态: </span><input class="easyui-textbox" type="text" name="code" style="width:166px;height:35px;line-height:35px;"></input>#}
-        {#        </div>#}
         <div class="opt-buttons">
             <a id="add" href="#" class="easyui-linkbutton">新增</a>
             <a id="edit" href="#" class="easyui-linkbutton">编辑</a>
             <a id='delete' href="#" class="easyui-linkbutton">删除</a>
+            <a id="import" href="#" class="easyui-linkbutton">导入</a>
             <a id="export" href="#" class="easyui-linkbutton">导出</a>
+
+            <div style="width:200px;height: 20px; float:right">
+                <input id="ss" style="width: 200px"></input>
+                <div id="mm">
+                    <div data-options="name:'pro_name'">项目名称</div>
+                    <div data-options="name:'pro_no'">项目编号</div>
+
+                    <div data-options="name:'internal_no'">内部文号</div>
+                    <div data-options="name:'task_code'">任务编号</div>
+                    <div data-options="name:'predict'">预计信息点</div>
+                    <div data-options="name:'linked_co__text'">挂靠单位</div>
+                </div>
+            </div>
         </div>
+
+
+        {#  复杂条件查询太占用版面，后期可以放入模态窗口中      #}
+        {% comment %}  <div class="conditions">
+            <span class="con-span">项目名称: </span><input class="easyui-textbox" type="text" name="pro_name" style="width:166px;height:30px;line-height:35px;"></input>
+            <span class="con-span">项目编号: </span><input class="easyui-textbox" type="text" name="pro_code" style="width:166px;height:30px;line-height:35px;"></input>
+            <a id="search" href="#" class="easyui-linkbutton" iconCls="icon-search">查询</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-reload">重置</a>
+            <a href="#" class="easyui-linkbutton more" iconCls="icon-more">更多</a>
+        </div>
+        <div class="conditions hide">
+            <span class="con-span">挂靠公司: </span><input class="easyui-textbox" type="text" name="linked_co" style="width:166px;height:30px;line-height:35px;"></input>
+            <span class="con-span">区域: </span><input id="c_district_2" name="district" style="width:166px;height: 30px">
+            <span class="con-span">内部文号: </span><input class="easyui-textbox" type="text" name="internal_no" style="width:166px;height:30px;line-height:35px;"></input>
+            <span class="con-span">项目类型: </span><input class="easyui-textbox" type="text" name="pro_type" style="width:166px;height:30px;line-height:35px;"></input>
+        </div>{% endcomment %}
     </div>
+    <!-- 顶部条件查询结束 -->
 </div>
-<script type="text/javascript" src="{% static '/custom/jquery.min.js' %}"></script>
-<script type="text/javascript" src="{% static '/custom/jquery.easyui.min.js' %}"></script>
-<script type="text/javascript" src="{% static '/custom/easyui-lang-zh_CN.js' %}"></script>
-<script src="{% static '/js/baseInfo.js' %}"></script>
 
-{#    <script type="text/javascript">#}
-{#            (function($){#}
-{#            function pagerFilter(data){#}
-{#                if ($.isArray(data)){   // is array#}
-{#                    data = {#}
-{#                        total: data.length,#}
-{#                        rows: data#}
-{#                    }#}
-{#                }#}
-{#                var target = this;#}
-{#                var dg = $(target);#}
-{#                var state = dg.data('datagrid');#}
-{#                var opts = dg.datagrid('options');#}
-{#                if (!state.allRows){#}
-{#                    state.allRows = (data.rows);#}
-{#                }#}
-{#                if (!opts.remoteSort && opts.sortName){#}
-{#                    var names = opts.sortName.split(',');#}
-{#                    var orders = opts.sortOrder.split(',');#}
-{#                    state.allRows.sort(function(r1,r2){#}
-{#                        var r = 0;#}
-{#                        for(var i=0; i<names.length; i++){#}
-{#                            var sn = names[i];#}
-{#                            var so = orders[i];#}
-{#                            var col = $(target).datagrid('getColumnOption', sn);#}
-{#                            var sortFunc = col.sorter || function(a,b){#}
-{#                                return a==b ? 0 : (a>b?1:-1);#}
-{#                            };#}
-{#                            r = sortFunc(r1[sn], r2[sn]) * (so=='asc'?1:-1);#}
-{#                            if (r != 0){#}
-{#                                return r;#}
-{#                            }#}
-{#                        }#}
-{#                        return r;#}
-{#                    });#}
-{#                }#}
-{#                var start = (opts.pageNumber-1)*parseInt(opts.pageSize);#}
-{#                var end = start + parseInt(opts.pageSize);#}
-{#                data.rows = state.allRows.slice(start, end);#}
-{#                return data;#}
-{#            }#}
-{##}
-{#            var loadDataMethod = $.fn.datagrid.methods.loadData;#}
-{#            var deleteRowMethod = $.fn.datagrid.methods.deleteRow;#}
-{#            $.extend($.fn.datagrid.methods, {#}
-{#                clientPaging: function(jq){#}
-{#                    return jq.each(function(){#}
-{#                        var dg = $(this);#}
-{#                        var state = dg.data('datagrid');#}
-{#                        var opts = state.options;#}
-{#                        opts.loadFilter = pagerFilter;#}
-{#                        var onBeforeLoad = opts.onBeforeLoad;#}
-{#                        opts.onBeforeLoad = function(param){#}
-{#                            state.allRows = null;#}
-{#                            return onBeforeLoad.call(this, param);#}
-{#                        }#}
-{#                        var pager = dg.datagrid('getPager');#}
-{#                        pager.pagination({#}
-{#                            onSelectPage:function(pageNum, pageSize){#}
-{#                                opts.pageNumber = pageNum;#}
-{#                                opts.pageSize = pageSize;#}
-{#                                pager.pagination('refresh',{#}
-{#                                    pageNumber:pageNum,#}
-{#                                    pageSize:pageSize#}
-{#                                });#}
-{#                                dg.datagrid('loadData',state.allRows);#}
-{#                            }#}
-{#                        });#}
-{#                        $(this).datagrid('loadData', state.data);#}
-{#                        if (opts.url){#}
-{#                            $(this).datagrid('reload');#}
-{#                        }#}
-{#                    });#}
-{#                },#}
-{#                loadData: function(jq, data){#}
-{#                    jq.each(function(){#}
-{#                        $(this).data('datagrid').allRows = null;#}
-{#                    });#}
-{#                    return loadDataMethod.call($.fn.datagrid.methods, jq, data);#}
-{#                },#}
-{#                deleteRow: function(jq, index){#}
-{#                    return jq.each(function(){#}
-{#                        var row = $(this).datagrid('getRows')[index];#}
-{#                        deleteRowMethod.call($.fn.datagrid.methods, $(this), index);#}
-{#                        var state = $(this).data('datagrid');#}
-{#                        if (state.options.loadFilter == pagerFilter){#}
-{#                            for(var i=0; i<state.allRows.length; i++){#}
-{#                                if (state.allRows[i] == row){#}
-{#                                    state.allRows.splice(i,1);#}
-{#                                    break;#}
-{#                                }#}
-{#                            }#}
-{#                            $(this).datagrid('loadData', state.allRows);#}
-{#                        }#}
-{#                    });#}
-{#                },#}
-{#                getAllRows: function(jq){#}
-{#                    return jq.data('datagrid').allRows;#}
-{#                }#}
-{#            })#}
-{#        })(jQuery);#}
-{##}
-{#        $(".more").click(function(){#}
-{#            $(this).closest(".conditions").siblings().toggleClass("hide");#}
-{#        });#}
-{#    </script>#}
-
-<div id="dlg" class="easyui-dialog" style="width:350px;height:350px;padding:10px 20px" closed="true"
-     buttons="#dlg-buttons">
-    <form id="fm" method="post">
+<div id="edit_dialog" class="easyui-dialog" style="padding: 5px 5px">
+    <form id="fm" method="post" enctype="multipart/form-data">
 
         <table style="border-collapse:separate; border-spacing:0px 10px;">
             <tr>
@@ -239,9 +119,22 @@
 <div id="dlg-buttons">
     <a id="save" href="#" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
     <a href="#" class="easyui-linkbutton" iconCls="icon-cancel"
-       onclick="javascript:$('#dlg').dialog('close')">取消</a>
+       onclick="javascript:$('#edit_dialog').dialog('close')">取消</a>
 </div>
 <!--------------->
+
+<!-- 导入Excel对话框 -->
+<div id="upload_dialog" style="padding: 5px 5px">
+    <form id="excel_form" enctype="multipart/form-data" method="post">
+        <input name="file" id="fb" type="text" style="width:250px">
+    </form>
+</div>
+
+<div id="excel-buttons">
+    <a id="excel_save" href="#" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel"
+       onclick="javascript:$('#upload_dialog').dialog('close')">取消</a>
+</div>
 
 </body>
 </html>

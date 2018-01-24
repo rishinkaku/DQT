@@ -1,0 +1,89 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link href="{% static '/pages/css/base.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/custom/uimaker/easyui.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/custom/uimaker/icon.css' %}">
+    <link rel="stylesheet" href="{% static '/pages/css/providers1.css' %}">
+    {% block my_style %}
+        <!-- 在这里添加样式代码 -->
+    {% endblock %}
+    <script type="text/javascript" src="{% static '/custom/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/custom/jquery.easyui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/custom/easyui-lang-zh_CN.js' %}"></script>
+    {% block my_script %}
+        <!-- 在这里添加JS代码 -->
+    {% endblock %}
+
+</head>
+<body>
+<div class="container">
+    <!-- 列表 -->
+    <table id="dg" style="width:100%;height:529px">
+    </table>
+    <!---------->
+    <!-- 列表关联的按钮（位于上方） -->
+    <div id="tb" style="padding:0 30px;">
+        <div class="opt-buttons">
+            <a id="add" href="#" class="easyui-linkbutton">新增</a>
+            <a id="edit" href="#" class="easyui-linkbutton">编辑</a>
+            <a id='delete' href="#" class="easyui-linkbutton">删除</a>
+            {% block func_buttons %}
+            {% endblock %}
+        </div>
+    </div>
+    <!----------------------------->
+</div>
+
+{% block body %}
+    <!-- body拓展 -->
+{% endblock %}
+
+<div id="edit_dialog" class="easyui-dialog" style="padding: 5px 5px">
+    <form id="fm" method="post" enctype="multipart/form-data">
+
+        <table style="border-collapse:separate; border-spacing:0px 10px;">
+            <!-- Form表单示例 -->
+            <!--
+            <tr>
+                <td>挂靠公司：</td>
+                <td><input id="c_linked_co" name="linked_co" style="width:200px;"></td>
+            </tr>
+            -->
+            {% block form %}
+
+            {% endblock %}
+
+        </table>
+
+    </form>
+</div>
+
+<!-- dg工具按钮 -->
+<div id="dlg-buttons">
+    <a id="save" href="#" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel"
+       onclick="javascript:$('#edit_dialog').dialog('close')">取消</a>
+</div>
+<!--------------->
+
+<!-- 导入Excel对话框 -->
+<div id="upload_dialog" style="padding: 5px 5px">
+    <form id="excel_form" enctype="multipart/form-data" method="post">
+        <input name="file" id="fb" type="text" style="width:250px">
+    </form>
+</div>
+
+<div id="excel-buttons">
+    <a id="excel_save" href="#" class="easyui-linkbutton" iconCls="icon-ok">保存</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel"
+       onclick="javascript:$('#upload_dialog').dialog('close')">取消</a>
+</div>
+
+</body>
+</html>

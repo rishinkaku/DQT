@@ -1,0 +1,35 @@
+{% extends 'list.html' %}
+{% load  staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}工程材料情况{% endblock %}</title>
+    {% block my_script %}
+        <script src="{% static 'js/materials.js' %}"></script>
+    {% endblock %}
+</head>
+<body>
+{% block form %}
+    <tr>
+        <td>项目名称：</td>
+        <td><input id="cc" name="project" style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>设计量：</td>
+        <td><input id="expected_scale" name="expected_scale" style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>LIS量：</td>
+        <td><input id="lis_scale" name="lis_scale" style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>到货量：</td>
+        <td><input id="good_arrived_scale" name="good_arrived_scale" style="width:200px;"></td>
+    </tr>
+{% endblock %}
+</body>
+</html>

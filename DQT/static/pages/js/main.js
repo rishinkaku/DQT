@@ -29,7 +29,7 @@ var mainPlatform = {
               icon: 4,
 			  title: '确定退出' //按钮
 			}, function(){
-			  location.href= 'login.html'; 
+			  location.href= 'login.html';
 			});
         });
         //左侧菜单收起
@@ -47,17 +47,18 @@ var mainPlatform = {
         $(document).on('click', '.pf-notice-item', function() {
             $('#pf-page').find('iframe').eq(0).attr('src', 'backend/notice.html')
         });
+
 	},
 	render: function(menu){
-		
+
 		if(menu == null)
 		{
 			alert("请先定义菜单！，格式请参考menu.js");
 			return;
 		}
-		
+
 		var current,html='',menuLi='';
-/*			
+/*
 左侧菜单的HTML结构。
                   <li class="current">
                         <a href="javascript:;">

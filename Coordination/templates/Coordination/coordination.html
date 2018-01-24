@@ -1,0 +1,74 @@
+{% extends 'list.html' %}
+{% load  staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}工程协调情况{% endblock %}</title>
+    {% block my_script %}
+        <script src="{% static 'js/coordination.js' %}"></script>
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+    <ul id="tt"></ul>
+{% endblock %}
+
+{% block form %}
+    <tr>
+        <td>项目名称：</td>
+        <td><input id="cc" name="project" style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>协调情况</td>
+        <td><input id="situation" name="situation" style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>设计图纸</td>
+        <td><input type="file" name="design_paper_paths" multiple style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>施工图纸</td>
+        <td><input type="file" name="construction_paper_paths" multiple style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>设计材料单</td>
+        <td><input type="file" name="design_material_paths" multiple style="width:200px;"></td>
+    </tr>
+
+    <tr>
+        <td>材料使用量</td>
+        <td><input type="file" name="material_usage_paths" multiple style="width:200px;"></td>
+    </tr>
+
+
+
+
+
+    {#    <tr>#}
+    {#        <input id="fb_dp" name="design_paper" type="text" style="width:200px">#}
+    {#    </tr>#}
+    {##}
+    {#    <tr>#}
+    {#        <input id="fb_cp" name="construction_paper" type="text" style="width:200px">#}
+    {#    </tr>#}
+    {##}
+    {#    <tr>#}
+    {#        <input id="fb_dm" name="design_material" type="text" style="width:200px">#}
+    {#    </tr>#}
+    {##}
+    {#    <tr>#}
+    {#        <input id="fb_mu" type="text" name="material_usage" style="width:200px">#}
+    {#    </tr>#}
+
+{% endblock %}
+
+{#{% block body %}#}
+{#    <table id="dg_files" style="width:100%;height:200px">#}
+{#{% endblock %}#}
+</body>
+</html>

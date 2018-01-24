@@ -8,22 +8,15 @@ $(function () {
 
     // =========================== 初始化 ===================================== \\
     $('#dg').datagrid({
-        url: basePath + '/base/all',
-        // data: [{'id':'1', 'linked_co__name': '测试'}],
+        url: basePath + '/coordination/list',
         columns: [[
             {field: 'ck', title: 'ck', checkbox: true},
-            {field: 'id', title: '主键', hidden: true},
-            {field: 'pro_name', title: '项目名称', align: 'center'},
-            {field: 'linked_co__text', title: '挂靠公司'},
-            {field: 'district__text', title: '区域'},
-            {field: 'internal_no', title: '内部文号'},
-            {field: 'pro_type__text', title: '项目类型'},
-            {field: 'pro_no', title: '项目编号'},
-            {field: 'task_code', title: '任务编号'},
-            {field: 'predict', title: '预计信息点'},
+            {field: 'coordination_id', title: '主键', hidden: true},
+            {field: 'project__pro_name', title: '项目名称', align: 'center'},
+            {field: 'situation', title: '协调情况'}
         ]],
         pagination: true,
-        toolbar: '#tb', // 顶部条件查询工具栏
+        toolbar: '#tb',
         pageSize: 10,
         striped: true,
         rownumbers: true,
@@ -33,9 +26,9 @@ $(function () {
 
     /* 初始化信息编辑对话框 */
     $('#edit_dialog').dialog({
-        title: '录入工程基本信息',
+        title: '录入',
         width: 300,
-        height: 400,
+        height: 300,
         closed: true,
         cache: false,
         modal: true,
@@ -53,49 +46,30 @@ $(function () {
         buttons: '#excel-buttons'
     });
 
-    $('#fb').filebox({
-        buttonText: '选择文件',
-        buttonAlign: 'left'
-    })
-
-    /* 下拉框初始化 */
-    $('#c_linked_co').combobox({
-        url: basePath + '/base/linked_co',
+    /**
+     * 初始化项目选择器
+     *
+     * 初始化时加载最新前10项目
+     * 当输入为空的时候加载最新前10的项目
+     * */
+    $('#cc').combobox({
+        url: basePath + '/base/get_top_10_pro',
         valueField: 'id',
-        textField: 'text'
+        textField: 'pro_name',
+        mode: 'remote'
     });
 
-    $('#c_district').combobox({
-        url: basePath + '/base/district',
-        valueField: 'id',
-        textField: 'text'
+    // 初始化文件树
+    $('#tt').tree({
+        url: '1'
     });
-
-    $('#c_pro_type').combobox({
-        url: basePath + '/base/pro_type',
-        valueField: 'id',
-        textField: 'text'
-    });
-
-    // 搜索框
-    $('#ss').searchbox({
-        searcher: function (value, name) {
-            $('#dg').datagrid('reload', {
-                name: name,
-                value: value
-            });
-        },
-        menu: '#mm',
-        prompt: '请输入关键字'
-    });
-
     // =========================== 事件绑定 ===================================== \\
     $('#add').click(function () {
         $('#edit_dialog').dialog('open').dialog('setTitle', '录入');
         // 设置表单新增模式url
         $('#fm').form('clear');
         $('#fm').form({
-            url: basePath + '/base/add',
+            url: basePath + '/coordination/add',
             success: function (data) {
                 $('#dg').datagrid('reload');
                 if (data) {
@@ -108,13 +82,13 @@ $(function () {
 
     $('#edit').click(function () {
         var targets = $('#dg').datagrid('getChecked');
-        var id = targets[0].id; // 选中多行的时候编辑第一个
+        var id = targets[0].material_situation; // 选中多行的时候编辑第一个
         // 编辑时候先将编辑对象的信息加载到表单
-        $('#fm').form('load', basePath + '/base/get_by_id/' + id);
+        $('#fm').form('load', basePath + '/coordination/get_by_id/' + id);
         $('#edit_dialog').dialog('open');
         // 设置表单编辑模式url
         $('#fm').form({
-            url: basePath + '/base/edit/' + id,
+            url: basePath + '/material/edit/' + id,
             success: function (data) {
                 $('#dg').datagrid('reload');
                 if (data) {
@@ -129,11 +103,11 @@ $(function () {
         var targets = $('#dg').datagrid('getChecked');
         var ids = [];
         $.each(targets, function (index, item) {
-            ids.push(item.id);
+            ids.push(item.material_situation);
         });
         $.ajax({
             type: "GET",
-            url: basePath + '/base/fake_delete',
+            url: basePath + '/coordination/fake_delete',
             // cache : false,
             // traditional: true,
             contentType: 'application/json',
@@ -156,42 +130,9 @@ $(function () {
         } else {
             alert('信息有误！');
         }
-
-        // $('#dg').datagrid('reload');
     });
 
-    $('#import').click(function () {
-        $('#upload_dialog').dialog('open');
-    })
 
-    $('#excel_save').click(function () {
-        $('#excel_form').form({
-            url: basePath + '/base/import_excel',
-            // data: $("#excel_form").serialize(),
-            success: function (data) {
-                if (data) {
-                    data = JSON.parse(data);
-                    alert(data.mess);
-                }
-            }
-        });
-        $('#excel_form').form('submit');
-    })
-
-    $(".more").click(function () {
-        $(this).closest(".conditions").siblings().toggleClass("hide");
-    });
-
-    // 复杂检索，暂时不启用
-    /*$('#search').click(function () {
-        $('#dg').datagrid('load', {
-            pro_name: $('[name=pro_name]').val(),
-            pro_code: $('[name=pro_code]').val(),
-            linked_co__id: $('[name=linked_co]').val(),
-            district__id: $('[name=district]').val(),
-            internal_no: $('[name=internal_no]').val(),
-            pro_type__id: $('[name=pro_type]').val()
-        });
-    })*/
     // =========================== 工具函数 ===================================== \\
+
 });

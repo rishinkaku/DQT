@@ -17,10 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
 
+import Materials
 from DQT.views import view_base
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
+    path('', view_base),
     path('base/', include('BaseInfo.urls')),
-    path('', view_base)
+    path('material/', include('Materials.urls')),
+    path('coordination/', include('Coordination.urls')),
 ]

@@ -265,9 +265,15 @@ def extract_params(request):
     conditions = []
     try:
         field_names = BaseInfo.query_fields()
-        for name in field_names:
-            if request.POST.get(name):
-                conditions.append(Q(**{name + '__contains': request.POST.get(name)}))
+        condition_name = request.POST.get('name', None)
+        if condition_name:
+            conditions.append(Q(**{condition_name + '__contains': request.POST.get('value')}))
+        # 处理组合查询
+        # 代码有问题，但是无法重现请求参数，所以留到需求出现的时候再做修改
+        # for name in field_names:
+        #     condition_name = request.POST.get('name', None)
+        #     if condition_name and condition_name == name:
+        #         conditions.append(Q(**{name + '__contains': request.POST.get(name)}))
     except Exception as field_ex:
         logging.warning(field_ex)
     return page, page_size, conditions

@@ -156,3 +156,4 @@ def pagination_handle(request, query):
         query = paginator.page(paginator.num_pages)
     rows = list(query)  # QuerySet --> list
     return JsonResponse({'rows': rows, 'total': total}, safe=False)
+

@@ -196,7 +196,7 @@ LOGGING = {
             'formatter': 'standard',  # 使用哪种formatters日志格式
         },
         'console': {  # 输出到控制台
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'class': 'logging.StreamHandler',
             'formatter': 'simple',
         },
